@@ -1,0 +1,237 @@
+/*STYLE SHEET FOR PAGE CONTENTS. SARED BETWEEN HTML FILES*/
+
+
+/*SYLE BY COMMON COMPONENTS*/
+a:hover {
+    font-weight: 900;
+  }
+a .theme-day {
+    Color: black;
+}
+a .theme-night {
+    color: snow;
+}
+.theme-night {
+    background: hsla(213, 65%, 28%, 1);
+
+    background: -moz-linear-gradient(45deg, hsla(213, 65%, 28%, 1) 0%, hsla(238, 35%, 34%, 1) 31%, hsla(314, 58%, 35%, 1) 78%, hsla(323, 70%, 40%, 1) 88%, hsla(323, 70%, 48%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#194376", endColorstr="#393B76", GradientType=1 );
+    color: #F4F4ED;
+}
+.theme-day {
+
+     background: hsla(40, 100%, 67%, 1);
+
+     background: -moz-linear-gradient(225deg, hsla(40, 100%, 67%, 1) 0%, hsla(8, 100%, 68%, 1) 50%, hsla(323, 71%, 46%, 1) 94%);     
+     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#ffc857", endColorstr="#ff715b", GradientType=1 );
+     color: black;
+}
+
+.tooltip-dark~.tooltip>.tooltip-inner {
+    background-color: black;
+  }
+  
+  .tooltip-dark~.tooltip>.tooltip-arrow {
+    border-bottom-color: black;
+  }
+
+h1 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, bold;
+    padding-top: 1em;
+
+}
+
+h2 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-top: 1em;
+}
+
+p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, cursive;
+    padding-top: 1em;
+    padding-bottom: 1em;;
+    padding-left: 2em;
+    padding-right: 2em;
+    text-justify:auto;
+}
+
+.body-day {
+    background: hsla(0, 0%, 100%, 1);
+    color: black;
+    background: linear-gradient(45deg, hsla(0, 0%, 100%, 1) 0%, hsla(300, 20%, 94%, 1) 37%, hsla(300, 22%, 92%, 1) 73%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#ffffff", endColorstr="#F3EDF3", GradientType=1 );
+    
+}
+
+.body-night {
+    background: hsla(0, 2%, 34%, 1);
+    color: whitesmoke;
+    background: linear-gradient(360deg, hsla(0, 2%, 34%, 1) 1%, hsla(300, 4%, 9%, 1) 92%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#575454", endColorstr="#181618", GradientType=1 );
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 2px solid rgba(67, 0, 88, 0.842);
+  }
+.line-separator {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 2px solid rgba(67, 0, 88, 0.842);
+}
+
+.sector-separator {
+    display: flex;
+    border: 0;
+    height: 20em;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+/*/SYLE BY COMMON COMPONENTS/*/
+
+/*STYLE BY SECTIONS*/
+#header {
+    border-radius: 0 0 20% 20%;
+    height: 5em;
+}
+#header img {
+    height: 4em;
+    width: 4em;
+}
+#header button {
+    align-self: flex-end center;
+    padding-right: 1em;
+    border-radius: 50%;
+}
+
+#footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    height: 12em;
+}
+
+#footer nav{
+    
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    font: 120% system-ui;
+    text-align: center;
+    padding: 2rem 1rem;
+    width: 100%;
+}
+
+#about {
+    object-fit: contain;
+    border-radius: 15%;
+}
+/* CSS screens 320px o above */
+@media (min-width: 320px) {
+
+    #about iframe {
+        height: 66em;
+        max-width: 100%;
+    } 
+    #gaming iframe {
+        height: 69em;
+        max-width: 100%;
+    } 
+    #programming iframe {
+        height: 104em;
+        max-width: 100%;
+    } 
+    h2 {
+        visibility: hidden;
+    }
+}
+/* CSS screens 550px o above */
+@media (min-width: 550px) {
+
+    #about iframe {
+        height: 60em;
+        max-width: 100%;
+    } 
+    #gaming iframe {
+        height: 72em;
+        max-width: 100%;
+    }
+    #programming iframe {
+        height: 112em;
+        max-width: 100%;
+    }  
+    h2 {
+        visibility: hidden;
+    }
+}
+/* CSS screens 900px o above */
+@media (min-width: 900px) {
+
+    #about iframe {
+        height: 56em;
+        max-width: 100%;
+    }
+    #gaming iframe {
+        height: 64em;
+        max-width: 100%;
+    }
+    #programming iframe {
+        height: 120em;
+        max-width: 100%;
+    } 
+    h2 {
+        visibility: visible;
+    }
+}
+/* CSS screens 1200px o above */
+@media (min-width: 1200px) {
+
+    #about iframe {
+        height: 42em;
+        max-width: 100%;
+    }
+    #gaming iframe {
+        height: 54em;
+        max-width: 100%;
+    }
+    #programming iframe {
+        height: 73em;
+        max-width: 100%;
+    } 
+    h2 {
+        visibility: visible;
+    }
+}
+#about img {
+    border-radius: 45%;
+    max-height: 20em;
+    width: auto;
+    border: 0.2em solid rgb(134, 0, 134);
+}
+
+#gaming-header {
+    max-width: 100%;
+    height: auto;
+}
+#gaming-header img {
+    max-width: 100vw;
+}
+
+#programming-header {
+    width: 100%;
+    height: auto;
+    position: relative;
+  text-align: center;
+}
+#programming-header img {
+    width:100%!important;
+    height: auto;
+} 
+#portafolio img {
+    max-width: 100%;
+}
+/*/STYLE BY SECTIONS/*/
