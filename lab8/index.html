@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script src="control.js" type="text/javascript"> </script>
+    </head>
+    <body>
+
+        <div class="jumbotron">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>Select the correct definition for JS</h3>
+                    <h3 id = "question1" type="hidden"></h3>
+                    <!-- TODO: Add multiple choice question here -->
+                        <hr>
+                    <button id="option0" type="button" onclick="colorQuestion(0)" type="submit"><h4>JavaScript es un lenguaje, pero no de programacion. Se ejecuta en consola y tiene su base en C.</h4></button>
+                        <hr>
+                    <button id="option2" type="button" onclick="colorQuestion(2)" type="submit"><h4>JavaScript es un lenguaje de programacion. Se ejecuta en el servidor como Python.</h4></button>
+                        <hr>
+                    <button id="option1" type="button" onclick="colorQuestion(1)" type="submit"><h4>JavaScript es un lenguaje de programacion. Se ejecuta en el dispositivo del usuario, como Pyton.</h4><button>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+
+                <!-- TODO: Add free response question here -->
+                <h2>Mas vale pajaro en mano?</h2>
+                    <form>
+                        <input type="text" autocomplete="off" autofocus id="freeResponse" placeholder="Complete">
+                        <h3 id = "question2" type="hidden"></h3>
+                            <button id="confirm1" type="button" onclick="checkAnswer()" type="submit">Enviar</button>
+                        </input>
+                    </form>
+            </div>
+        </div>
+    </body>
+</html>
